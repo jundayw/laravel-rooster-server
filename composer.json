@@ -1,5 +1,5 @@
 {
-    "name": "jundayw/rooster-server",
+    "name": "nacosvel/laravel-rooster-server",
     "description": "Nacosvel Rooster Server Implementation for Laravel.",
     "keywords": [
         "Nacosvel Rooster Server Implementation for Laravel",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jundayw\\RoosterServer\\": "src/"
+            "Nacosvel\\RoosterServer\\": "src/"
         }
     },
     "provide": {
@@ -31,7 +31,7 @@
         },
         "laravel": {
             "providers": [
-                "Jundayw\\RoosterServer\\RoosterServerServiceProvider"
+                "Nacosvel\\RoosterServer\\RoosterServerServiceProvider"
             ]
         }
     },
