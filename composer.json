@@ -15,15 +15,12 @@
     ],
     "require": {
         "php": ">=8.0",
-        "nacosvel/rooster-server": "^1.0"
+        "nacosvel/laravel-database-manager": "^1.0"
     },
     "autoload": {
         "psr-4": {
             "Nacosvel\\RoosterServer\\": "src/"
         }
-    },
-    "provide": {
-        "nacosvel/rooster-server-implementation": "1.0"
     },
     "extra": {
         "branch-alias": {
