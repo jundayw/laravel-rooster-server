@@ -2,6 +2,7 @@
 
 namespace Nacosvel\RoosterServer;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class RoosterServerServiceProvider extends ServiceProvider
@@ -49,6 +50,11 @@ class RoosterServerServiceProvider extends ServiceProvider
             $connections[$name] = $config;
         }
         $this->app['config']['database.connections'] = $connections;
+
+        Route::middlewareGroup(Middleware::class, [
+            Middleware::class,
+        ]);
+        $this->loadRoutesFrom(realpath(__DIR__ . '/../routes/rooster-server.php'));
     }
 
     /**
